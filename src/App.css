@@ -1,0 +1,56 @@
+body{
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.board {
+  max-width: 300px;
+  margin: auto;
+}
+
+
+.tile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: #f8f9fa;
+  color:black;
+  font-size: 2em;
+  border: 2px solid #dee2e6;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Hover effect for numbered tiles */
+.tile-number:hover {
+  background-color: #e9ecef;
+  transform: scale(1.05);
+}
+
+
+.tile-empty {
+  background-color: #553ec8;
+  cursor: default;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
+.shuffle{
+  background-color: #553ec8;
+  padding:10px 20px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.shuffle:hover{
+  background-color: #5137d4;
+  padding:10px 20px;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  transition: background-color 0.3s, transform 0.3s;
+
+}
